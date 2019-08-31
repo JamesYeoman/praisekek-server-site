@@ -1,0 +1,35 @@
+{
+  "name": "praisekek-server-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamesYeoman/praisekek-server-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JamesYeoman/praisekek-server-site/issues"
+  },
+  "homepage": "https://github.com/JamesYeoman/praisekek-server-site#readme",
+  "devDependencies": {
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "source-map-loader": "^0.2.4",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.6.2",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7"
+  },
+  "dependencies": {
+    "@types/materialize-css": "^1.0.6",
+    "materialize-css": "^1.0.0-rc.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  }
+}

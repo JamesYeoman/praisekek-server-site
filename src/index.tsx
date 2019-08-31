@@ -1,33 +1,10 @@
-import React from "react";
-const SupportEmail = props => {
-    const link = "mailto: " + props.emailAddr;
-    const aTag = <a href={link}>{props.emailAddr}</a>;
-    return <p>Let me know via {aTag} if the Discord Invite doesn't work.</p>;
-};
+import * as React from "react";
+import * as ReactDOM from "react-dom";
+import * as M from "materialize-css";
 
-const Links = props => {
-    const listItems = props.links.map((urlobj) => (
-        <li key={urlobj.key.toString()}>
-            <a href={urlobj.url}>{urlobj.text}</a>
-        </li>
-    ));
+import { Links } from "./components/Links";
+import { UsefulInfo } from "./components/UsefulInfo";
 
-    return <ul className={props.className} id={props.id}>{listItems}</ul>;
-};
-
-const UsefulInfo = props => {
-    const classNames = "card-panel " + props.classNames;
-    return (
-        <div className={classNames}>
-            <h3>Useful Info</h3>
-            <div>
-                <p>Use the "Important Links" dropdown (or, if you're accessing via Mobile, use the Slide Out Panel) for links to crucial sites.</p>
-                <p>If you have any issues, leave a message in #bugs-and-issues in the Discord Server</p>
-                <SupportEmail emailAddr="praisekek.minecraftserver@gmail.com"/>
-            </div>
-        </div>
-    );
-};
 
 class BodyRenderer extends React.Component{
     componentDidMount() {
